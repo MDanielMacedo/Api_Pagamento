@@ -7,19 +7,26 @@
 	"item": [
 		{
 			"name": "Ler todas as mensagens",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/mensagens/",
-					"protocol": "http",
+					"raw": "{{API_URL}}/mensagens/",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{API_URL}}"
 					],
-					"port": "3000",
 					"path": [
 						"mensagens",
 						""
@@ -46,15 +53,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/mensagens/",
-					"protocol": "http",
+					"raw": "{{API_URL}}/mensagens/",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{API_URL}}"
 					],
-					"port": "3000",
 					"path": [
 						"mensagens",
 						""
@@ -78,15 +80,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/mensagens",
-					"protocol": "http",
+					"raw": "{{API_URL}}/mensagens",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{API_URL}}"
 					],
-					"port": "3000",
 					"path": [
 						"mensagens"
 					]
@@ -109,15 +106,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/mensagens/3",
-					"protocol": "http",
+					"raw": "{{API_URL}}/mensagens/3",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{API_URL}}"
 					],
-					"port": "3000",
 					"path": [
 						"mensagens",
 						"3"
@@ -131,16 +123,20 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/mensagens/2",
-					"protocol": "http",
+					"raw": "{{API_URL}}/mensagens/2",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{API_URL}}"
 					],
-					"port": "3000",
 					"path": [
 						"mensagens",
 						"2"
